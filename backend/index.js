@@ -10,7 +10,7 @@ databaseConnection();
 const app = express() 
 const port = 8080
 const corsOptions={
-    origin:"http://localhost:5173",
+    origin:['http://localhost:3000','https://netflix-clone-gamma-smoky.vercel.app/'],
     credentials:true,
 }
 app.use(cors(corsOptions))
