@@ -237,7 +237,7 @@ function Login() {
             </div>
             <form
                 onSubmit={getInputData}
-                className="absolute p-11 bg-black min-w-[340px] flex flex-col w-3/12 my-36 left-0 right-0 top-[15%] items-center justify-center mx-auto opacity-85 rounded-md"
+                className="absolute p-11 bg-black min-w-[340px] flex flex-col w-3/12 my-36 left-0 right-0 top-[12%] items-center justify-center mx-auto opacity-85 rounded-md"
             >
                 <h1 className="text-3xl text-white mb-5 font-bold">
                     {isLogin ? "Login" : "Signup"}
