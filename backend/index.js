@@ -8,7 +8,7 @@ dotenv.config()
 
 databaseConnection();
 const app = express() 
-const port = 8080
+const port = process.env.PORT || 8080
 const corsOptions={
     origin:['http://localhost:3000','https://netflix-clone-gamma-smoky.vercel.app/'],
     credentials:true,
