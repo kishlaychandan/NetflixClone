@@ -27,47 +27,42 @@ A **React-based movie browsing application** that allows users to **search, expl
 - **Notifications**: `react-hot-toast`
 
 ---
-## 🔍 API Endpoints
 
-### 🎬 **TMDB Movie APIs**
-# 🎥 Netflix Clone
-
-A clone of Netflix built with **React**, **Redux**, **Tailwind CSS**, and **TMDB API** for movies. This project supports **user authentication** (login, signup) with a backend hosted on **Render**.
-
----
 
 ## 🔍 API Endpoints
 
 ### 🎬 **TMDB Movie APIs**
+
 1. **Now Playing Movies**  
    **GET**:  
-   [https://api.themoviedb.org/3/movie/now_playing](https://api.themoviedb.org/3/movie/now_playing)  
+   [https://api.themoviedb.org/3/movie/now_playing](https://api.themoviedb.org/3/movie/now_playing)
 
 2. **Popular Movies**  
    **GET**:  
-   [https://api.themoviedb.org/3/movie/popular](https://api.themoviedb.org/3/movie/popular)  
+   [https://api.themoviedb.org/3/movie/popular](https://api.themoviedb.org/3/movie/popular)
 
 3. **Top Rated Movies**  
    **GET**:  
-   [https://api.themoviedb.org/3/movie/top_rated](https://api.themoviedb.org/3/movie/top_rated)  
+   [https://api.themoviedb.org/3/movie/top_rated](https://api.themoviedb.org/3/movie/top_rated)
 
 4. **Upcoming Movies**  
    **GET**:  
-   [https://api.themoviedb.org/3/movie/upcoming](https://api.themoviedb.org/3/movie/upcoming)  
+   [https://api.themoviedb.org/3/movie/upcoming](https://api.themoviedb.org/3/movie/upcoming)
 
 5. **Search Movies**  
    **GET**:  
-   [https://api.themoviedb.org/3/search/movie?query={movie_name}](https://api.themoviedb.org/3/search/movie?query={movie_name})  
+   [https://api.themoviedb.org/3/search/movie?query={movie_name}](https://api.themoviedb.org/3/search/movie?query={movie_name})
 
 6. **Movie Poster URL**  
    **Base URL for Posters**:  
-   [https://image.tmdb.org/t/p/w500](https://image.tmdb.org/t/p/w500)  
+   [https://image.tmdb.org/t/p/w500](https://image.tmdb.org/t/p/w500)
 
-➡️ For more details on TMDB API, visit the [TMDB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction).  
+➡️ For more details on TMDB API, visit the [TMDB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction).
 
 ---
 
-### 🔑 **Backend API (User Authentication)**  
+### 🔑 **Backend API (User Authentication)**
+
 1. **Login User**  
    **POST**:  
    [https://netflixclone-5hqh.onrender.com/api/v1/user/login](https://netflixclone-5hqh.onrender.com/api/v1/user/login)  
@@ -77,7 +72,18 @@ A clone of Netflix built with **React**, **Redux**, **Tailwind CSS**, and **TMDB
      "email": "user@example.com",
      "password": "password123"
    }
-
+   ```
+2. **Register User**  
+    **POST**:  
+    [https://netflixclone-5hqh.onrender.com/api/v1/user/register](https://netflixclone-5hqh.onrender.com/api/v1/user/register)  
+    **Request Body**:
+   ```json
+   {
+     "fullName": "John Doe",
+     "email": "user@example.com",
+     "password": "password123"
+   }
+   ```
 
 ---
 
@@ -88,3 +94,4 @@ A clone of Netflix built with **React**, **Redux**, **Tailwind CSS**, and **TMDB
    git clone https://github.com/kishlaychandan/NetflixClone
    cd netflix
    npm install
+   ```
