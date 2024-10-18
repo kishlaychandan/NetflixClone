@@ -7,7 +7,7 @@ A **React-based movie browsing application** that allows users to **search, expl
 ## 🌐 Live Demo
 
 Check out the live version of the project:  
-[Netflix Clone on Vercel](https://netflix-iota-sooty.vercel.app/)
+[Netflix Clone](https://netflix-clone-gamma-smoky.vercel.app/)
 
 ---
 
