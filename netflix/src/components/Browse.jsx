@@ -11,6 +11,8 @@ import usePopularMovies from "../hooks/usePopularMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovie";
 import useUpComingMovies from "../hooks/useUpcomingMovie";
 import SearchMovie from "./SearchMovie";
+import Footer from "./Footer";
+import FAQ from "./FAQ";
 
 function Browse() {
   const dispatch = useDispatch();
@@ -43,11 +45,14 @@ function Browse() {
           <SearchMovie />
         ) : (
           <>
+
             <MainContainer />
             <MovieContainer />
           </>
         )}
       </div>
+      <FAQ />
+      <Footer />
     </>
   );
 }

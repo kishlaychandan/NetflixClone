@@ -40,7 +40,7 @@ function SearchMovie() {
   return (
     <>
       <div className="flex flex-col items-center justify-center pt-[25%] sm:pt-[20%] md:pt-[15%] lg:pt-[8%] w-[100%]">
-        <form action="" className="w-[50%]" onSubmit={submitHandler}>
+        <form action="" className="w-[50%] m-8" onSubmit={submitHandler}>
           <div className="flex sm:flex-row justify-between shadow-md border-gray-200 rounded-md p-2 w-[100%] items-center flex-col">
             <input
               value={searchMovie}
