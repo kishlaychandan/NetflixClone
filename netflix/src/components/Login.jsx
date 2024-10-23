@@ -1,5 +1,5 @@
 // export default Login;
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
 import { useState } from "react";
 import axios from "axios";
@@ -26,6 +26,10 @@ function Login() {
         setMessage(""); // Clear the message when switching forms
     };
 
+    useEffect(() => {
+        alert("This Api not work on Jio network, Use Airtel or any Other.")
+    },[]);
+    
     const getInputData = async (e) => {
         e.preventDefault();
         dispatch(setLoading(true));
@@ -87,9 +91,6 @@ function Login() {
 
     return (
         <>
-        {   
-            alert("This Api not work on Jio network, Use Airtel or any Other.")
-        }
             <Header />
             <div className="">
                 <img
