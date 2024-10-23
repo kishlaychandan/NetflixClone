@@ -88,7 +88,7 @@ function Login() {
     return (
         <>
         {   
-            alert("this TMDB Api not work on Jio network, Use Airtel or Other")
+            alert("This Api not work on Jio network, Use Airtel or Other")
         }
             <Header />
             <div className="">
