@@ -27,7 +27,7 @@ function Login() {
     };
 
     useEffect(() => {
-        alert("This Api not work on Jio network, Use Airtel or any Other Network.")
+        alert("This Api does not work on Jio network, Use Airtel or any Other Network.")
     },[]);
 
     const getInputData = async (e) => {
