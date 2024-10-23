@@ -47,10 +47,11 @@ function Login() {
                 }
 
                 dispatch(setUser(res.data.user));
-                alert("this api not work on jio network, please use airtel")
+                alert("this TMDB Api not work on Jio network, please use Airtel")
                 navigate("/browse");
             } catch (err) {
                 const errorMsg = err.response?.data?.message || "Login failed!";
+                console.log("error", errorMsg);
                 toast.error(errorMsg);
                 setMessage(errorMsg); // Set error message
             } finally {
