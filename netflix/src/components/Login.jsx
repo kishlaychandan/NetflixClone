@@ -47,6 +47,7 @@ function Login() {
                 }
 
                 dispatch(setUser(res.data.user));
+                alert("this api not work on jio network, please use airtel")
                 navigate("/browse");
             } catch (err) {
                 const errorMsg = err.response?.data?.message || "Login failed!";
