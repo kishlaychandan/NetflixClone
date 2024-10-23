@@ -47,7 +47,6 @@ function Login() {
                 }
 
                 dispatch(setUser(res.data.user));
-                alert("this TMDB Api not work on Jio network, please use Airtel")
                 navigate("/browse");
             } catch (err) {
                 const errorMsg = err.response?.data?.message || "Login failed!";
@@ -88,6 +87,9 @@ function Login() {
 
     return (
         <>
+        {   
+            alert("this TMDB Api not work on Jio network, Use Airtel or Other")
+        }
             <Header />
             <div className="">
                 <img
